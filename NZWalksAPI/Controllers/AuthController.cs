@@ -10,6 +10,7 @@ namespace NZWalksAPI.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
+        //dfg
         private readonly UserManager<IdentityUser> userManager;
         private readonly ITokenRepository tokenRepository;
         public AuthController(UserManager<IdentityUser> userManager, ITokenRepository tokenRepository)
