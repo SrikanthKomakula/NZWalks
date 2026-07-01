@@ -1,0 +1,23 @@
+﻿@model IEnumerable<NZWalks.UI.Models.DTOs.WalkDTO>
+
+
+    <h1>Walks</h1>
+    <button type="button" asp-controller="Walks" asp-action="Add">Add Walk</button>
+    <table>
+    <thead>
+    <td>ID</td>
+    <td>Name</td>
+    <td>MyProperty</td>
+    <td>LengthInKm</td>
+    </thead>
+    <tbody>
+        @foreach(var walk in Model)
+        {
+        <td>@walk.Id</td>
+        <td>@walk.Name</td>
+        <td>@walk.MyProperty</td>
+        <td>@walk.LengthInKm</td>
+        }
+        <tr></tr>
+    </tbody>
+</table>

@@ -1,0 +1,36 @@
+﻿@model NZWalks.UI.Models.DTOs.AddWalkDTO
+@{
+}
+
+
+
+
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MyProperty" class="control-label"></label>
+        <input asp-for="MyProperty" class="form-control" />
+        <span asp-validation-for="MyProperty" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="LengthInKm" class="control-label"></label>
+        <input asp-for="LengthInKm" class="form-control" />
+        <span asp-validation-for="LengthInKm" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="WalkImageUrl" class="control-label"></label>
+        <input asp-for="WalkImageUrl" class="form-control" />
+        <span asp-validation-for="WalkImageUrl" class="text-danger"></span>
+    </div>
+
+    
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
