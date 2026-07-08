@@ -130,8 +130,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+else {
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
-app.UseMiddleware<ExceptionHandlerMiddleware>();
+    app.UseMiddleware<ExceptionHandlerMiddleware>();
 
 app.UseHttpsRedirection();
 
